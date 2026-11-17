@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00DAD63BFD8D0C9725EE4DE9 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05D707E715A00806414BADA /* SettingsView.swift */; };
+		0D31D085D155D7E7A3513CC4 /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = A872F2C2F0F3C355FC48EF30 /* Topic.swift */; };
+		17705152E5302BD36DFD7DC6 /* TopicPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AB368602AC44EFA1D26F56 /* TopicPickerView.swift */; };
+		1A024918B75FC65D6B089ADB /* TutorReplyParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23036F8C7F73844F03C23B1 /* TutorReplyParser.swift */; };
+		22E8F1D2965ED57F2C022ED9 /* SpeechSynthesizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D716CEDD0075B0ED442879 /* SpeechSynthesizer.swift */; };
+		29EF23E2229D228317123162 /* ConversationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C9C993C4D707F01DB8D225 /* ConversationViewModel.swift */; };
+		3D572DBF3F248B161316FEA3 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54C575E0584DC7C355C20B2 /* HomeView.swift */; };
+		3FCF26415F2ABCF20E302FAE /* SSEParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38EAF9FE00A9FF148BC0BD58 /* SSEParser.swift */; };
+		3FFA04301AF4AD4A98E58F95 /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595B547E9BEE2651792D83E8 /* SessionStore.swift */; };
+		4723531D23ADC32D18E12662 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5BCDB3317D4061C174AE8B /* AppState.swift */; };
+		5AE08773609D4A6622821286 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 955F3099808135DC74E357B0 /* PrivacyInfo.xcprivacy */; };
+		5F23A92831523C7D5B41E9C3 /* LinguaMateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614D8DF70E8B40C3F56A68BF /* LinguaMateApp.swift */; };
+		6A09D4467098E702FE93BCCC /* LLMClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8087A5FE5C3481D540D4C564 /* LLMClient.swift */; };
+		6D2641A283B9C4C6378CB979 /* RunFixtures.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF983345D446D792DC88CCD4 /* RunFixtures.swift */; };
+		7D3F495835940F04B7C4A3F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E467AAB0975E3AF8BFEB394 /* Assets.xcassets */; };
+		7DF4AD0863EE5B6DC02C0446 /* CatalogAndUtilityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03237222C25BB39777C2430D /* CatalogAndUtilityTests.swift */; };
+		7F43F98AC3633CDD062AFFDA /* TutorReplyParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A019ABFD904988041FAA15FF /* TutorReplyParserTests.swift */; };
+		81DA737B9CCFDB64D910F03B /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1A26DB4E85C2669A625AD1 /* Theme.swift */; };
+		8631F79D41238DC5C7E21DAE /* KeychainStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9630203F04E95BA91A74DC23 /* KeychainStore.swift */; };
+		98D10B181C39A81EC1E15148 /* SessionStoreCodecTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3756EB5EF9BD5CF10594A53 /* SessionStoreCodecTests.swift */; };
+		A8F6BB9DE9DAB7FFCF72B45E /* ChatEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA3BE5BBACF2325E92D3DAB /* ChatEngine.swift */; };
+		B0F7DC1A47CDB8805187F27D /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070BAC66377F80C842A134F2 /* RootView.swift */; };
+		BA1D7754492122F676C9CD9B /* PromptBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F904CDF36EE3FA1EE2A7D84 /* PromptBuilder.swift */; };
+		C0CE173859C9F86D6CDF434C /* AudioSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE27F905D495E2C3B810AE03 /* AudioSessionManager.swift */; };
+		C308CF36498D377AB2C4BD99 /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA34664300833C193C7EA21 /* SpeechRecognizer.swift */; };
+		CCCB85329626A3849A8043CB /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF283FB8B5A1B5AEF615CB05 /* AppSettings.swift */; };
+		D2445DFFB8479A29E5BD332E /* SSEParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58CD6130B0A22088F154307 /* SSEParserTests.swift */; };
+		D9B71DF1DA5C5976FE0DB024 /* ConversationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DF022C944B339B1248A1BE /* ConversationView.swift */; };
+		DE684B432BE47B1A033D2798 /* TopicCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC42407C4C569C76789F241 /* TopicCatalog.swift */; };
+		E1A2B3C4D5E6F708192A3B4C /* ModelConfigurationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A2B3C4D5E6F708192A3B4C /* ModelConfigurationTests.swift */; };
+		E60FD45AC3703362607EC34C /* ChatModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0533FCAE5020D86BF625212F /* ChatModels.swift */; };
+		E80C3CE92A1C024F6C686477 /* PromptBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D62002068BE65A91B5EDBD /* PromptBuilderTests.swift */; };
+		E94E7F9552DF0CC3F3C55153 /* MessageBubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9498F7EEE882EBF09C46EBFF /* MessageBubbleView.swift */; };
+		EC3FA9A54BB7E49CED5E83A9 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BDEE96BA541902ADB493F9 /* Language.swift */; };
+		F0697E3E43EF1704BD885548 /* MockChatEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6646A921DDE430C30ED1C3 /* MockChatEngine.swift */; };
+		F6E2FD6CB2CFFC76935A8EC3 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D7CF3509BC874014EE6A60 /* HistoryView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		442D136F2CCA8363379B51AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46F86FAA6BBF9AC94A7E4595 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E3435DDA2687639586BF0B70;
+			remoteInfo = LinguaMate;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01D7CF3509BC874014EE6A60 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		03237222C25BB39777C2430D /* CatalogAndUtilityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogAndUtilityTests.swift; sourceTree = "<group>"; };
+		0533FCAE5020D86BF625212F /* ChatModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModels.swift; sourceTree = "<group>"; };
+		070BAC66377F80C842A134F2 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		15DF022C944B339B1248A1BE /* ConversationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationView.swift; sourceTree = "<group>"; };
+		19C9C993C4D707F01DB8D225 /* ConversationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationViewModel.swift; sourceTree = "<group>"; };
+		30BDEE96BA541902ADB493F9 /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
+		38EAF9FE00A9FF148BC0BD58 /* SSEParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSEParser.swift; sourceTree = "<group>"; };
+		4E5BCDB3317D4061C174AE8B /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		53D62002068BE65A91B5EDBD /* PromptBuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptBuilderTests.swift; sourceTree = "<group>"; };
+		595B547E9BEE2651792D83E8 /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
+		614D8DF70E8B40C3F56A68BF /* LinguaMateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinguaMateApp.swift; sourceTree = "<group>"; };
+		6F1A26DB4E85C2669A625AD1 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		6F904CDF36EE3FA1EE2A7D84 /* PromptBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptBuilder.swift; sourceTree = "<group>"; };
+		8087A5FE5C3481D540D4C564 /* LLMClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLMClient.swift; sourceTree = "<group>"; };
+		81D716CEDD0075B0ED442879 /* SpeechSynthesizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechSynthesizer.swift; sourceTree = "<group>"; };
+		84337AD8D27FCD69AF2C4FC2 /* LinguaMate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LinguaMate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9498F7EEE882EBF09C46EBFF /* MessageBubbleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBubbleView.swift; sourceTree = "<group>"; };
+		955F3099808135DC74E357B0 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		9630203F04E95BA91A74DC23 /* KeychainStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainStore.swift; sourceTree = "<group>"; };
+		9C6646A921DDE430C30ED1C3 /* MockChatEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockChatEngine.swift; sourceTree = "<group>"; };
+		9CA3BE5BBACF2325E92D3DAB /* ChatEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatEngine.swift; sourceTree = "<group>"; };
+		9E467AAB0975E3AF8BFEB394 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A019ABFD904988041FAA15FF /* TutorReplyParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorReplyParserTests.swift; sourceTree = "<group>"; };
+		A05D707E715A00806414BADA /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		A872F2C2F0F3C355FC48EF30 /* Topic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Topic.swift; sourceTree = "<group>"; };
+		B3756EB5EF9BD5CF10594A53 /* SessionStoreCodecTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStoreCodecTests.swift; sourceTree = "<group>"; };
+		B3AB368602AC44EFA1D26F56 /* TopicPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicPickerView.swift; sourceTree = "<group>"; };
+		B54C575E0584DC7C355C20B2 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		B5A2BEBE86215B3F6D160426 /* LinguaMateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LinguaMateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE27F905D495E2C3B810AE03 /* AudioSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioSessionManager.swift; sourceTree = "<group>"; };
+		BF983345D446D792DC88CCD4 /* RunFixtures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunFixtures.swift; sourceTree = "<group>"; };
+		C58CD6130B0A22088F154307 /* SSEParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSEParserTests.swift; sourceTree = "<group>"; };
+		D1A2B3C4D5E6F708192A3B4C /* ModelConfigurationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelConfigurationTests.swift; sourceTree = "<group>"; };
+		E23036F8C7F73844F03C23B1 /* TutorReplyParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorReplyParser.swift; sourceTree = "<group>"; };
+		E2F71B888764B39B2643A4DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDA34664300833C193C7EA21 /* SpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
+		FDC42407C4C569C76789F241 /* TopicCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicCatalog.swift; sourceTree = "<group>"; };
+		FF283FB8B5A1B5AEF615CB05 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		54AB89D79F92BD2966E41BD8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EFAB1ECC0D092E20FE51FCD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		518DA81DB9B99529C0C0AEBE = {
+			isa = PBXGroup;
+			children = (
+				BE0E5C18B3A7D2B37317A647 /* LinguaMate */,
+				E69FC880A1F41232BBE12485 /* LinguaMateTests */,
+				547D009064F7C3F13BEF3460 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		547D009064F7C3F13BEF3460 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84337AD8D27FCD69AF2C4FC2 /* LinguaMate.app */,
+				B5A2BEBE86215B3F6D160426 /* LinguaMateTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6045BD29714C768AC9787056 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FF283FB8B5A1B5AEF615CB05 /* AppSettings.swift */,
+				0533FCAE5020D86BF625212F /* ChatModels.swift */,
+				30BDEE96BA541902ADB493F9 /* Language.swift */,
+				A872F2C2F0F3C355FC48EF30 /* Topic.swift */,
+				FDC42407C4C569C76789F241 /* TopicCatalog.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7CFBE8EFCCDD68B9FD176DC6 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				4E5BCDB3317D4061C174AE8B /* AppState.swift */,
+				19C9C993C4D707F01DB8D225 /* ConversationViewModel.swift */,
+				614D8DF70E8B40C3F56A68BF /* LinguaMateApp.swift */,
+				6F1A26DB4E85C2669A625AD1 /* Theme.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		8BBDD4FF5229F1D35B31AFD8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				15DF022C944B339B1248A1BE /* ConversationView.swift */,
+				01D7CF3509BC874014EE6A60 /* HistoryView.swift */,
+				B54C575E0584DC7C355C20B2 /* HomeView.swift */,
+				9498F7EEE882EBF09C46EBFF /* MessageBubbleView.swift */,
+				070BAC66377F80C842A134F2 /* RootView.swift */,
+				A05D707E715A00806414BADA /* SettingsView.swift */,
+				B3AB368602AC44EFA1D26F56 /* TopicPickerView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A350893EA071B26A0453B756 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				BE27F905D495E2C3B810AE03 /* AudioSessionManager.swift */,
+				9CA3BE5BBACF2325E92D3DAB /* ChatEngine.swift */,
+				9630203F04E95BA91A74DC23 /* KeychainStore.swift */,
+				8087A5FE5C3481D540D4C564 /* LLMClient.swift */,
+				9C6646A921DDE430C30ED1C3 /* MockChatEngine.swift */,
+				6F904CDF36EE3FA1EE2A7D84 /* PromptBuilder.swift */,
+				595B547E9BEE2651792D83E8 /* SessionStore.swift */,
+				FDA34664300833C193C7EA21 /* SpeechRecognizer.swift */,
+				81D716CEDD0075B0ED442879 /* SpeechSynthesizer.swift */,
+				38EAF9FE00A9FF148BC0BD58 /* SSEParser.swift */,
+				E23036F8C7F73844F03C23B1 /* TutorReplyParser.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		BE0E5C18B3A7D2B37317A647 /* LinguaMate */ = {
+			isa = PBXGroup;
+			children = (
+				E2F71B888764B39B2643A4DE /* Info.plist */,
+				955F3099808135DC74E357B0 /* PrivacyInfo.xcprivacy */,
+				7CFBE8EFCCDD68B9FD176DC6 /* App */,
+				6045BD29714C768AC9787056 /* Models */,
+				D2A0679DF3FB0A7999FB68DE /* Resources */,
+				A350893EA071B26A0453B756 /* Services */,
+				8BBDD4FF5229F1D35B31AFD8 /* Views */,
+			);
+			path = LinguaMate;
+			sourceTree = "<group>";
+		};
+		D2A0679DF3FB0A7999FB68DE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9E467AAB0975E3AF8BFEB394 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E69FC880A1F41232BBE12485 /* LinguaMateTests */ = {
+			isa = PBXGroup;
+			children = (
+				03237222C25BB39777C2430D /* CatalogAndUtilityTests.swift */,
+				D1A2B3C4D5E6F708192A3B4C /* ModelConfigurationTests.swift */,
+				53D62002068BE65A91B5EDBD /* PromptBuilderTests.swift */,
+				BF983345D446D792DC88CCD4 /* RunFixtures.swift */,
+				B3756EB5EF9BD5CF10594A53 /* SessionStoreCodecTests.swift */,
+				C58CD6130B0A22088F154307 /* SSEParserTests.swift */,
+				A019ABFD904988041FAA15FF /* TutorReplyParserTests.swift */,
+			);
+			path = LinguaMateTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5DED2D04DB49D4091162647E /* LinguaMateTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAD8CF6A7B2149B4F0FD27D7 /* Build configuration list for PBXNativeTarget "LinguaMateTests" */;
+			buildPhases = (
+				BDA9E329ACCE0E746140CA84 /* Sources */,
+				54AB89D79F92BD2966E41BD8 /* Frameworks */,
+				25B7C02526925672442B0E39 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E8423AC23B49980A58FAFF35 /* PBXTargetDependency */,
+			);
+			name = LinguaMateTests;
+			productName = LinguaMateTests;
+			productReference = B5A2BEBE86215B3F6D160426 /* LinguaMateTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E3435DDA2687639586BF0B70 /* LinguaMate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16419E460ABF390A1CD37EDF /* Build configuration list for PBXNativeTarget "LinguaMate" */;
+			buildPhases = (
+				4821909E9BF9E73E471FEA84 /* Sources */,
+				6EFAB1ECC0D092E20FE51FCD /* Frameworks */,
+				F667297ED3AB90EAC07798D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LinguaMate;
+			productName = LinguaMate;
+			productReference = 84337AD8D27FCD69AF2C4FC2 /* LinguaMate.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		46F86FAA6BBF9AC94A7E4595 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1630;
+				TargetAttributes = {
+					5DED2D04DB49D4091162647E = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = E3435DDA2687639586BF0B70;
+					};
+					E3435DDA2687639586BF0B70 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 8CB014CF6CC51EFAF0098F2A /* Build configuration list for PBXProject "LinguaMate" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = 518DA81DB9B99529C0C0AEBE;
+			productRefGroup = 547D009064F7C3F13BEF3460 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E3435DDA2687639586BF0B70 /* LinguaMate */,
+				5DED2D04DB49D4091162647E /* LinguaMateTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		25B7C02526925672442B0E39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F667297ED3AB90EAC07798D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AE08773609D4A6622821286 /* PrivacyInfo.xcprivacy in Resources */,
+				7D3F495835940F04B7C4A3F2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4821909E9BF9E73E471FEA84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4723531D23ADC32D18E12662 /* AppState.swift in Sources */,
+				29EF23E2229D228317123162 /* ConversationViewModel.swift in Sources */,
+				5F23A92831523C7D5B41E9C3 /* LinguaMateApp.swift in Sources */,
+				81DA737B9CCFDB64D910F03B /* Theme.swift in Sources */,
+				CCCB85329626A3849A8043CB /* AppSettings.swift in Sources */,
+				E60FD45AC3703362607EC34C /* ChatModels.swift in Sources */,
+				EC3FA9A54BB7E49CED5E83A9 /* Language.swift in Sources */,
+				0D31D085D155D7E7A3513CC4 /* Topic.swift in Sources */,
+				DE684B432BE47B1A033D2798 /* TopicCatalog.swift in Sources */,
+				C0CE173859C9F86D6CDF434C /* AudioSessionManager.swift in Sources */,
+				A8F6BB9DE9DAB7FFCF72B45E /* ChatEngine.swift in Sources */,
+				8631F79D41238DC5C7E21DAE /* KeychainStore.swift in Sources */,
+				6A09D4467098E702FE93BCCC /* LLMClient.swift in Sources */,
+				F0697E3E43EF1704BD885548 /* MockChatEngine.swift in Sources */,
+				BA1D7754492122F676C9CD9B /* PromptBuilder.swift in Sources */,
+				3FFA04301AF4AD4A98E58F95 /* SessionStore.swift in Sources */,
+				C308CF36498D377AB2C4BD99 /* SpeechRecognizer.swift in Sources */,
+				22E8F1D2965ED57F2C022ED9 /* SpeechSynthesizer.swift in Sources */,
+				3FCF26415F2ABCF20E302FAE /* SSEParser.swift in Sources */,
+				1A024918B75FC65D6B089ADB /* TutorReplyParser.swift in Sources */,
+				D9B71DF1DA5C5976FE0DB024 /* ConversationView.swift in Sources */,
+				F6E2FD6CB2CFFC76935A8EC3 /* HistoryView.swift in Sources */,
+				3D572DBF3F248B161316FEA3 /* HomeView.swift in Sources */,
+				E94E7F9552DF0CC3F3C55153 /* MessageBubbleView.swift in Sources */,
+				B0F7DC1A47CDB8805187F27D /* RootView.swift in Sources */,
+				00DAD63BFD8D0C9725EE4DE9 /* SettingsView.swift in Sources */,
+				17705152E5302BD36DFD7DC6 /* TopicPickerView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDA9E329ACCE0E746140CA84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DF4AD0863EE5B6DC02C0446 /* CatalogAndUtilityTests.swift in Sources */,
+				E1A2B3C4D5E6F708192A3B4C /* ModelConfigurationTests.swift in Sources */,
+				E80C3CE92A1C024F6C686477 /* PromptBuilderTests.swift in Sources */,
+				6D2641A283B9C4C6378CB979 /* RunFixtures.swift in Sources */,
+				98D10B181C39A81EC1E15148 /* SessionStoreCodecTests.swift in Sources */,
+				D2445DFFB8479A29E5BD332E /* SSEParserTests.swift in Sources */,
+				7F43F98AC3633CDD062AFFDA /* TutorReplyParserTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E8423AC23B49980A58FAFF35 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E3435DDA2687639586BF0B70 /* LinguaMate */;
+			targetProxy = 442D136F2CCA8363379B51AC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		16ACE556BD5CA3C51FD3F043 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8C876724AB;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = LinguaMate/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lblsuan.linguamate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		82000B87E0EC13AD7FD6DA43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8C876724AB;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = LinguaMate/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lblsuan.linguamate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		84F9322E66EE35E48CCB22FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.linguamate.app.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LinguaMate.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LinguaMate";
+			};
+			name = Debug;
+		};
+		92E165A9035A603BE73D2E62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		95D0608A0642C6FDF4DD406E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.linguamate.app.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LinguaMate.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LinguaMate";
+			};
+			name = Release;
+		};
+		E1D3BBA94590957B0374D6E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		16419E460ABF390A1CD37EDF /* Build configuration list for PBXNativeTarget "LinguaMate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82000B87E0EC13AD7FD6DA43 /* Debug */,
+				16ACE556BD5CA3C51FD3F043 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CB014CF6CC51EFAF0098F2A /* Build configuration list for PBXProject "LinguaMate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92E165A9035A603BE73D2E62 /* Debug */,
+				E1D3BBA94590957B0374D6E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAD8CF6A7B2149B4F0FD27D7 /* Build configuration list for PBXNativeTarget "LinguaMateTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84F9322E66EE35E48CCB22FE /* Debug */,
+				95D0608A0642C6FDF4DD406E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 46F86FAA6BBF9AC94A7E4595 /* Project object */;
+}
